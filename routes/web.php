@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get(
+    '/', function () {
+        return view('welcome');
+    }
+);
+
+Route::get('/movie/create', 'MovieController@create');
+Route::post('/movie', 'MovieController@store');
+
+Route::get('/movie/{date}/edit', 'MovieController@edit');
+Route::put('/movie/{date}', 'MovieController@update');
