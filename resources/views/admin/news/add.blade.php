@@ -29,7 +29,7 @@
             </div>
             <div class="col-9">
                 <h1>お知らせ登録</h1>
-                <form action="/news/add_next" method="post">
+                <form action="/admin/news/add_next" method="post">
                     {{ csrf_field() }}
                     <div class="form-check form-check-inline">
                         <a href="schedule_add.html">

@@ -29,8 +29,8 @@
             <div class="col-9">
                 <h1 class="m-3">お知らせ詳細</h1>
                 <div id="icons" class="mr-3" style="float:right;">
-                    <a href="/news/edit/{{$news->id}}"><img src="{{ asset('images/icon_fix.png') }}"></a>
-                    <a href="/news/delete/{{$news->id}}"><img src="{{ asset('images/icon_dustbox.png') }}"></a>
+                    <a href="/admin/news/edit/{{$news->id}}"><img src="{{ asset('images/icon_fix.png') }}"></a>
+                    <a href="/admin/news/delete/{{$news->id}}"><img src="{{ asset('images/icon_dustbox.png') }}"></a>
                 </div>
                 <div class="m-5">
                     <h5>日付</h5>

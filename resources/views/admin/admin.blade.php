@@ -103,7 +103,7 @@
                                     <h5 class="card-title">お知らせ情報</h5>
                                     <div class="list-group">
                                         @foreach ($news as $item)
-                                        <a href="/news/detail/{{$item->id}}"
+                                        <a href="/admin/news/detail/{{$item->id}}"
                                             class="list-group-item list-group-item-action">{{$item->title}}</a>
                                         @endforeach
                                     </div>
@@ -118,7 +118,7 @@
                                 <a href="schedule_edit.html" class="btn btn-block btn-primary">スケジュールを編集</a>
                             </div>
                             <div class="col">
-                                <a href="/news/add" class="btn btn-block btn-warning">お知らせ登録</a>
+                                <a href="/admin/news/add" class="btn btn-block btn-warning">お知らせ登録</a>
                             </div>
                         </div>
                     </div>

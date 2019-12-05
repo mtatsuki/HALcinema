@@ -27,7 +27,7 @@
             </div>
             <div class="col-9">
                 <h1>お知らせ編集</h1>
-                <form action="/news/edit_next" method="post">
+                <form action="/admin/news/edit_next" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="id" value="{{$news->id}}">
                     <div class="form-check form-check-inline m-4">
