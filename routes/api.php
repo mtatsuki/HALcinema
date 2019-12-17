@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('auth:api')->get(
+    '/user', function (Request $request) {
+        return $request->user();
+    }
+);
+
+Route::get("admin/schedule/{date}", "ApiController@getScheduleByDate");
+Route::get("admin/news/{date}", "ApiController@getNewsByDate");
